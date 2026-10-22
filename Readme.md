@@ -23,7 +23,7 @@
 
 ## 📋 Instrucciones de Uso
 
-1.  **Ejecutar:** Abre el archivo `Pomodoro.exe`.
+1.  **Ejecutar:** Descarga `Pomodoro.exe` desde [Releases](https://github.com/antonio101105/Pomodoro-Ultimate/releases/latest), comprueba su hash SHA-256 (publicado en la release) y ábrelo. También puedes ejecutar directamente `Pomodoro.ps1` con PowerShell.
 2.  **Configurar:** Elige un tiempo predefinido o escribe uno manualmente y pulsa **OK**.
 3.  **Enfocar:** Escribe tu tarea en la caja de texto central.
 4.  **Iniciar:** Pulsa el botón verde **"INICIAR"** (o presiona la `Barra Espaciadora`).
@@ -38,3 +38,17 @@
 * **Tecnología:** Desarrollado con PowerShell y Windows Forms.
 
 > **¡Mantén el foco y alcanza tus objetivos!**
+
+---
+
+## 🔐 Verificación del ejecutable
+
+El `.exe` no está firmado digitalmente, así que Windows SmartScreen puede avisar al abrirlo. Antes de ejecutarlo, compara su hash con el publicado en la release:
+
+```powershell
+Get-FileHash .\Pomodoro.exe -Algorithm SHA256
+```
+
+## 📄 Licencia
+
+[MIT](LICENSE)
